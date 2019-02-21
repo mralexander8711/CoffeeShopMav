@@ -1,0 +1,13 @@
+@charset "ISO-8859-1";
+h1 {
+  color: red;
+  text-align: center;
+}
+.register{
+	color:black;
+	text-align: center;
+}
+.form-group label{
+	width:7em;
+	display: inline-block;
+}
