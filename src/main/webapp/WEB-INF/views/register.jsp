@@ -7,11 +7,11 @@
 <head>
 <link rel="stylesheet" href="/style.css">
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Black Joe Cafe'(Registration)</title>
 </head>
 <body>
 <h1 class="register">Please Fill The Form To Register!</h1>
-<form action="/AddUser">
+<form action="/ItemsList">
 <p class="form-group"><label>First Name: </label><input type="text" name ="firstName"><br>
 <p class="form-group"><label>Last Name: </label><input type="text" name = "lastName"><br>
 <p class="form-group"><label>Email: </label><input type="email" name = "email"><br>

@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Black Joe Cafe'</title>
+<title>Black Joe Cafe'(Admin)</title>
 </head>
 <body>
-		<h1>Items To Purchase</h1>
+		<h1>Update Inventory</h1>
 		     <table class="table">
            <thead>
                <tr>
@@ -16,18 +16,20 @@
                </tr>
            </thead>
            <tbody>
-               <c:forEach var="items" items ="${items}">
+               <c:forEach var="items" items ="${item}">
                <tr>
                    <td><a href="/ItemsList">${item.name}</a></td>
-                   <td>${item.description}</td>
-                   <td>${item.quantity}</td>
-                   <td>${item.price}</td>
+                   <td>${item.description}</td> <td>${item.quantity}</td><td>${item.price}</td>
+                  <td>
+                   <a class="btn btn-secondary" href="/adminForm?id=${item.id }">Edit</a>
+                   <a href="/admin/delete?id=${item.id }" class="btn btn-light btn-sm">Delete</a>
+                 </td>
                </tr>
                </c:forEach>
            </tbody>
-       </table>
-	
-		
-		<a class="btn btn-secondary" href="/admin">Admin</a>
+       </table>	
+        <a class="btn btn-secondary" href="/editlist">Add</a>
+		<a class="btn btn-secondary" href="/ItemsList">Back</a>
+
 </body>
 </html>

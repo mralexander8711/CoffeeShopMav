@@ -11,3 +11,8 @@ h1 {
 	width:7em;
 	display: inline-block;
 }
+body {
+  background-image: url("C:\Users\Michael Alexander\Pictures\Saved Pictures\desktop.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
