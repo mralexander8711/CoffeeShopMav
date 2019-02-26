@@ -8,26 +8,39 @@
 <title>Black Joe Cafe'</title>
 </head>
 <body>
+
 		<h1>Items To Purchase</h1>
+		<%--  ${itemTest } has been added to your shopping cart! --%>
+		
 		     <table class="table">
+		    
            <thead>
                <tr>
                    <th>Items</th><th>Description</th><th>Quantity</th><th>Price</th>
                </tr>
            </thead>
            <tbody>
-               <c:forEach var="items" items ="${items}">
+          
+               <c:forEach var="item" items ="${item1}">
+                
                <tr>
-                   <td><a href="/ItemsList">${item.name}</a></td>
-                   <td>${item.description}</td>
-                   <td>${item.quantity}</td>
-                   <td>${item.price}</td>
+               <form action="addToCart">
+                   <td>${item.name}<input type="hidden" name="name" value="${item.name}"><input type="hidden" name="id" value="${item.id}"></td>
+                   <td>${item.description}<input type="hidden" name="description" value="${item.description}"></td>
+                   <td><input type="number" name="quantity"></td>
+                   <td>${item.price}<input type="hidden" name="price" value="${item.price}"></td>
+                   <td><input type="submit" value="Add to Cart"></td>
+                 </form>
                </tr>
+             
                </c:forEach>
+              
            </tbody>
+           
        </table>
+       
 	
-		
+		<a class="btn btn-secondary" href="/checkout">CheckOut</a>
 		<a class="btn btn-secondary" href="/admin">Admin</a>
 </body>
 </html>

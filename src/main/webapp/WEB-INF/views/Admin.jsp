@@ -16,7 +16,7 @@
                </tr>
            </thead>
            <tbody>
-               <c:forEach var="items" items ="${item}">
+               <c:forEach var="item" items ="${item}">
                <tr>
                    <td><a href="/ItemsList">${item.name}</a></td>
                    <td>${item.description}</td> <td>${item.quantity}</td><td>${item.price}</td>

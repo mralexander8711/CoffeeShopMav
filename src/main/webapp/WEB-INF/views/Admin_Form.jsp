@@ -15,7 +15,7 @@
 <p class="form-group"><label>Price: </label><input type="number" step=0.01 name ="price"placeholder="${items.price}"><br>
 <p class="form-group"><label>Quantity: </label><input type="number" step=0 name="quantity"placeholder="${items.quantity}"><br>
 <input name="id" hidden="true" value ="${items.id}"><br>
-
+<input type="submit" value="Update">
 </form>
 </body>
 </html>

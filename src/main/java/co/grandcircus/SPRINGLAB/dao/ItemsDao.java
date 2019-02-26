@@ -51,11 +51,11 @@ public class ItemsDao {
 
 		public void delete(Long id) {
 			// Deleting with Hibernate entity manager requires fetching a reference first.
-			Item items = em.getReference(Item.class, id);
-			em.remove(items);
+			Item item = em.getReference(Item.class, id);
+			em.remove(item);
 		}
-		public void edit(Item items) {
-			em.merge(items);
+		public void edit(Item item) {
+			em.merge(item);
 		}
 		public Item findById(Long id) {
 			return em.find(Item.class, id);

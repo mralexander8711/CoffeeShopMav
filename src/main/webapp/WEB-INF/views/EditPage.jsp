@@ -10,13 +10,14 @@
 <body>
 <h1 class="register"> Edit Current Item</h1>
 <form action="/adminEdit"method="post">
-<p class="form-group"><label>Name: </label><input type="text" name = "name" placeholder="${items.name}"><br>
-<p class="form-group"><label>Description: </label><input type="text" name = "description"placeholder="${items.description}" ><br>
-<p class="form-group"><label>Price: </label><input type="number" step=0.01 name ="price"placeholder="${items.price}"><br>
-<p class="form-group"><label>Quantity: </label><input type="number" step=1 name="quantity"placeholder="${items.quantity}"><br>
-<input name="id" hidden="true" value ="${items.id}"><br>
+<p class="form-group"><label>Name: </label><input type="text" name = "name" placeholder="${item.name}"><br>
+<p class="form-group"><label>Description: </label><input type="text" name = "description"placeholder="${item.description}" ><br>
+<p class="form-group"><label>Price: </label><input type="number" step=0.01 name ="price"placeholder="${item.price}"><br>
+<p class="form-group"><label>Quantity: </label><input type="number" step=1 name="quantity"placeholder="${item.quantity}"><br>
+<input name="id" hidden="true" value ="${item.id}"><br>
 </p>
 <input type="submit" value="Update">
+
 </form>
 </body>
 </html>

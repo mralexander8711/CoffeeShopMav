@@ -20,14 +20,15 @@
                </tr>
            </thead>
            <tbody>
-<%--                <c:forEach var="items" items ="${items}">
+           <c:forEach var="item" items ="${item1}">
                <tr>
-                   <td><a href="/ItemsList">${items.name}</a></td>
-                   <td>${items.description}</td>
-                   <td>${items.quantity}</td>
-                   <td>${items.price}</td>
-               </tr> --%>
-              <%-- </c:forEach> --%>
+                   <td><a href="/ItemsList">${ item.name }</a></td>
+                   <td>${ item.description }</td>
+                   <td>${ item.quantity }</td>
+                   <td>${ item.price }</td>
+               
+               </tr>
+              </c:forEach>
            </tbody>
        </table>
 
